@@ -1,6 +1,6 @@
 import pino from 'pino'
 
-const logger = pino({
+export const logger = pino({
   level: process.env.LOG_LEVEL || 'info',
   messageKey: 'code',
   base: null,
@@ -55,5 +55,3 @@ const logger = pino({
     }
   }
 })
-
-export default logger

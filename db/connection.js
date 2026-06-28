@@ -1,6 +1,7 @@
 import Redis from 'ioredis'
+import {config} from '#config/index.js'
 
-const redisUrl = process.env.REDIS_URL || 'redis://127.0.0.1:6379'
+const redisUrl = config.redis_url
 
 // Create the Redis client instance
 const redis = new Redis(redisUrl, {

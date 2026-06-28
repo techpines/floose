@@ -57,4 +57,9 @@ export default defineConfig([{
   rules: {
     'n/no-unpublished-import': 'off'
   }
+}, {
+  files: ['runtime/init.js'],
+  rules: {
+    'n/no-process-exit': 'off'
+  }
 }])
