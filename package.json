@@ -1,0 +1,14 @@
+{
+  "name": "floos",
+  "version": "1.0.0",
+  "type": "module",
+  "imports": {
+    "#/*": "./*"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ecs": "^3.1075.0",
+    "@aws-sdk/client-sqs": "^3.1075.0",
+    "bullmq": "^5.79.2",
+    "ioredis": "^5.11.1"
+  }
+}
