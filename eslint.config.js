@@ -52,7 +52,6 @@ export default defineConfig([{
     'n/file-extension-in-import': ['error', 'always']
   }
 }, {
-  // Special exception for config files so they can safely use devDependencies
   files: ['eslint.config.js'],
   rules: {
     'n/no-unpublished-import': 'off'
