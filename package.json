@@ -5,6 +5,10 @@
   "imports": {
     "#/*": "./*"
   },
+  "scripts": {
+    "push": "bash ./bin/push.sh"
+  },
+  
   "dependencies": {
     "@aws-sdk/client-ecs": "^3.1075.0",
     "@aws-sdk/client-sqs": "^3.1075.0",
