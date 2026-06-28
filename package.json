@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "type": "module",
   "imports": {
-    "#/*": "./*"
+    "#*": "./*"
   },
   "scripts": {
     "push": "bash ./bin/push.sh",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "worker": "node start worker",
+    "socket": "node start socket"
   },
   "dependencies": {
     "@aws-sdk/client-ecs": "^3.1075.0",
@@ -17,7 +19,9 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
     "eslint": "^10.6.0",
+    "eslint-plugin-n": "^18.2.1",
     "globals": "^17.7.0"
   }
 }
