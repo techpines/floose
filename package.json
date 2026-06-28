@@ -6,13 +6,18 @@
     "#/*": "./*"
   },
   "scripts": {
-    "push": "bash ./bin/push.sh"
+    "push": "bash ./bin/push.sh",
+    "lint": "eslint . --fix"
   },
-  
   "dependencies": {
     "@aws-sdk/client-ecs": "^3.1075.0",
     "@aws-sdk/client-sqs": "^3.1075.0",
     "bullmq": "^5.79.2",
     "ioredis": "^5.11.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.6.0",
+    "globals": "^17.7.0"
   }
 }
