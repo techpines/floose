@@ -9,6 +9,7 @@
   "scripts": {
     "push": "bash ./bin/push.sh",
     "lint": "eslint . --fix",
+    "eslint": "eslint . --fix",
     "worker": "node --env-file=config/.env start worker | npx pino-pretty",
     "socket": "node --env-file=config/.env start socket | npx pino-pretty"
   },
