@@ -26,6 +26,18 @@ export default {
     // Modern Node.js safety rules
     ...nodePlugin.configs['flat/recommended-module'].rules,
 
+    'no-restricted-imports': [
+      'error',
+      {
+        'patterns': [
+          {
+            'group': ['../**'],
+            'message': 'No relative parent paths.'
+          }
+        ]
+      }
+    ],
+
     // 3. Modern stylistic rules
     '@stylistic/indent': ['error', 2, {
       VariableDeclarator: {var: 2, let: 2, const: 3}
