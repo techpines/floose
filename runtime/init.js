@@ -10,8 +10,7 @@ process.on('uncaughtException', (err) => {
 
 process.on('unhandledRejection', (reason) => {
   const error = reason instanceof Error ? reason : new Error(String(reason))
-  logger.fatal('unhandled-rejection', error)
-  process.exit(1)
+  logger.error('unhandled-rejection', error)
 })
 
 process.on('warning', (warning) => {

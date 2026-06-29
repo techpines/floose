@@ -1,3 +1,3 @@
-# floos
+# floose
 
 > Automated trading platform.

@@ -1,6 +1,7 @@
 {
-  "name": "floos",
+  "name": "floose",
   "version": "1.0.0",
+  "private": true,
   "type": "module",
   "imports": {
     "#*": "./*"
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
+    "aws-cdk-lib": "^2.260.0",
     "eslint": "^10.6.0",
     "eslint-plugin-n": "^18.2.1",
     "globals": "^17.7.0",

@@ -4,8 +4,7 @@ import {config} from '#config/index.js'
 import {logger} from '#util/logger.js'
 import * as modes from '#runtime/index.js'
 
-const target = process.argv[2] || null
-const runtime = modes[target]
+const runtime = modes[config.runtime.mode]
 
 logger.info('config', {config})
 
